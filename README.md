@@ -1,6 +1,6 @@
-## Foundry
+## Foundry-Fork-Test
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+
 
 Foundry consists of:
 
@@ -23,8 +23,16 @@ $ forge build
 
 ### Test
 
+
 ```shell
-$ forge test
+# Run all test cases
+$ forge test -vvv
+
+# Run test cases on specific chain
+$ forge test --match-path test/integration/chains/{chain}}/*.t.sol -vvvv
+
+# Run test cases on specific test
+$ forge test --match-path test/integration/chains/{chain}}/{test}*.t.sol -vvvv
 ```
 
 ### Format
