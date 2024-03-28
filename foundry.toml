@@ -3,4 +3,11 @@ src = "src"
 out = "out"
 libs = ["lib"]
 
+[rpc_endpoints]
+polygon = "https://1rpc.io/matic"
+arbitrum = "https://1rpc.io/arb"
+optimism = "https://1rpc.io/op"
+ethereum = "https://1rpc.io/eth"
+
+
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
