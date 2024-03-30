@@ -9,8 +9,13 @@ contract ForkUtils is Test {
         _;
     }
 
-    constructor(string memory chain) {
-        vm.createSelectFork(vm.rpcUrl(chain));
-        console.log("fork chain:", chain);
+    constructor(string memory chain, uint256 forkedBlock) {
+        if (forkedBlock > 0) {
+            console.log("fork chain:", chain, "on ", forkedBlock);
+            vm.createSelectFork(vm.rpcUrl(chain), forkedBlock);
+        } else {
+            console.log("fork chain:", chain);
+            vm.createSelectFork(vm.rpcUrl(chain));
+        }
     }
 }
