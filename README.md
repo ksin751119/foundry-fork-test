@@ -173,4 +173,7 @@ $ forge test --match-contract AaveV3AdaptorTestOnOptimism --match-test "testSupp
 
 ---
 
-**The primary goal is to accelerate the development of smart contracts. Everyone is welcome to fork and submit PRs to further improve the entire framework!**
+# Contributions
+
+The primary goal is to accelerate the development of smart contracts. Everyone is welcome to fork and submit PRs to further improve the entire framework!
+Please see [Contribution Guideline](CONTRIBUTION.md) for more details.
